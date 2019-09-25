@@ -1,0 +1,13 @@
+.navbar {
+    height: 25%;
+}
+
+.img {
+    width: 20%;
+    height: 20%;
+    position: center;
+}
+
+.dropdown-menu {
+    padding-right: 10px;
+}

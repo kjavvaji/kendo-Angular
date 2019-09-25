@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="card-columns d-flex justify-content-center">
+        <div class="card mr-5">
+            <kendo-calendar>
+
+            </kendo-calendar>
+
+        </div>
+
+        <div class="card mr-5">
+                <div class="card">
+                        Selected range: {{ range | json }}
+                    </div>
+                    <kendo-daterange>
+                        <button kendoButton [disabled]="true" [icon]="'calendar'">Start    </button>
+                        <kendo-dateinput kendoDateRangeStartInput [(value)]="range.start" placeholder="Pick a Date"></kendo-dateinput>
+                        <br/>
+                        <button kendoButton [disabled]="true" [icon]="'calendar'">End</button>
+                        <kendo-dateinput kendoDateRangeEndInput [(value)]="range.end" placeholder="Pick a Date"></kendo-dateinput>
+
+                    </kendo-daterange>
+        </div>
+        <div class="card mr-5">
+                <div class="example-config">
+                        Selected value is: {{value | date:format}}
+                    </div>
+                    <div class="example-wrapper">
+                        <p>Select date and time:</p>
+                        <kendo-datetimepicker
+                            [format]="format"
+                            [(value)]="value"
+                        >
+                        </kendo-datetimepicker>
+                        <p>(use Alt + ↓ to open the calendar, Alt + ← and Alt + →  to change the tabs)</p>
+                    </div>
+
+        </div>
+    </div>
+</div>

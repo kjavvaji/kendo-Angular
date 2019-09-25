@@ -1,0 +1,16 @@
+.container {
+    padding-left: 2%;
+    padding-top: 20%;
+    
+}
+
+.kc{
+    margin: inline;
+}
+
+ .label {
+    display: block;
+    font-weight: bold;
+    text-indent: 8px;
+    color: #656565;
+  } 

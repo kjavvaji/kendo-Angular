@@ -1,0 +1,9 @@
+.container{
+    padding-top:10%;
+    /* height: 100%; */
+}
+
+kendo-grid{
+    width: 130%;
+    height:120%;
+}

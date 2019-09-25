@@ -1,0 +1,24 @@
+<div class="container">
+    
+        <kendo-grid
+        [data]="gridView"
+        [pageSize]="pageSize"
+        [skip]="skip"
+        [pageable]="true"
+        [height]="600"
+        (pageChange)="pageChange($event)"
+        [filterable]="true"
+        [sortable]="{
+            allowUnsort: allowUnsort,
+            mode: multiple ? 'multiple' : 'single'
+            }"
+          [sort]="sort"
+          (sortChange)="sortChange($event)"
+      >
+    <kendo-grid-column field="Id" title="ID" width="40"  [sortable]="false"></kendo-grid-column>
+    <kendo-grid-column field="CompanyName" title="COMPANY NAME" width="40"></kendo-grid-column>
+    <kendo-grid-column field="ContactName" title="CONTACT NAME" width="40"></kendo-grid-column>
+    <kendo-grid-column field="ContactTitle" title="CONTACT TITLE" width="40"></kendo-grid-column>
+    <kendo-grid-column field="City" title="CITY" width="40"></kendo-grid-column>
+    </kendo-grid>
+</div>
