@@ -24,14 +24,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { GridallComponent } from './gridall/gridall.component';
-
-
-
-
-
-
-
-
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -60,6 +53,7 @@ import { GridallComponent } from './gridall/gridall.component';
     DropDownsModule,
     FormsModule,
     DateInputsModule,
+    HttpClientModule,
     ButtonsModule
   ],
   providers: [],
